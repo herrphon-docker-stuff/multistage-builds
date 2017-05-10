@@ -8,4 +8,4 @@ FROM alpine
 WORKDIR /app
 COPY --from=build-env /src/goapp /app/
 EXPOSE 80
-ENTRYPOINT ./goapp
+ENTRYPOINT ["./goapp"]
